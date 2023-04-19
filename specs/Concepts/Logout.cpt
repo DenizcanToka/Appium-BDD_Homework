@@ -1,0 +1,14 @@
+#Anasayfa açılır,AnasayfaLogo nun görünür olduğu doğrulanır
+* "com.pozitron.hepsiburada:id/image_message_of_day" li element gorunur olana kadar bekle
+* "com.pozitron.hepsiburada:id/image_message_of_day" li elementin oldugu kontrol edilir
+
+#Hesap mesüne tıklanır, ekran aşığı kaydırılır
+* "com.pozitron.hepsiburada:id/account_menu_button" id'li elemente tikla
+
+#Çıkış Yap'a tıkanır,Çıkış yapıldığı Hesap Menüsündeki "MisafırKullanıcıText" ile kontrol edilir
+//SWİPE
+*"//android.view.ViewGroup[@content-desc=\"account_menu_button_13\"]/android.view.ViewGroup/android.widget.Button" li elementi bulana kadar swipe et
+*"//android.view.ViewGroup[@content-desc=\"account_menu_button_13\"]/android.view.ViewGroup/android.widget.Button" xpath'li elemente tikla
+* "com.pozitron.hepsiburada:id/account_menu_button" id'li elemente tikla
+*"com.pozitron.hepsiburada:id/tvToolbarTitle" li elementin oldugu kontrol edilir
+

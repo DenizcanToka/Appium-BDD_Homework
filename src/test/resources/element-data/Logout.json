@@ -1,0 +1,13 @@
+[
+  {
+    "key": "ÇıkışYapButonu",
+    "value": "//android.view.ViewGroup[@content-desc=\"account_menu_button_13\"]/android.view.ViewGroup/android.widget.Button",
+    "type": "xpath"
+  },
+  {
+    "key" : "MisafırKullanıcıText",
+    "value" : "com.pozitron.hepsiburada:id/tvToolbarTitle",
+    "type" : "id"
+  }
+
+]

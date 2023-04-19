@@ -1,0 +1,17 @@
+[
+{
+  "key": "AramaTextbox",
+  "value": "com.pozitron.hepsiburada:id/etSearchBox",
+  "type": "id"
+},
+{
+"key": "AramaButton",
+"value": "com.pozitron.hepsiburada:id/imageViewSearchIcon",
+"type": "id"
+},
+{
+"key": "AramaSonucuText",
+"value" : "com.pozitron.hepsiburada:id/tvToolbarTitle",
+"type" : "id"
+}
+  ]

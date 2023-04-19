@@ -1,0 +1,34 @@
+
+This is a concept file with following syntax for each concept.
+
+# Anasayfa açılır,AnasayfaLogo nun görünür olduğu doğrulanır
+* "com.pozitron.hepsiburada:id/image_message_of_day" li element gorunur olana kadar bekle
+* "com.pozitron.hepsiburada:id/image_message_of_day" li elementin oldugu kontrol edilir
+
+#Hesap mesüne tıklanır, üye ol'a tıklanır
+* "com.pozitron.hepsiburada:id/account_menu_button" id'li elemente tikla
+* "//android.view.ViewGroup[@content-desc='account_menu_button_0']/android.view.ViewGroup/android.widget.Button" xpath'li elemente tikla
+
+#Email  girilir , doğrulama yapıldıktan sonra devam et butonuna basılır
+*"com.pozitron.hepsiburada:id/button" id'li elemente tikla
+*"com.pozitron.hepsiburada:id/button" id'li elemente "testdeneme021@gmail.com" text degerini gonder
+*"btnSignUpSubmit" id'li elemente tikla
+
+#İsim text box'a "Test " girilir , Soyadı text box'a "Deneme "girilir
+*"txtName" id'li elemente tikla
+*"txtName" id'li elemente "Test" text degerini gonder
+*"txtSurname" id'li elemente tikla
+*"txtSurname" id'li elemente "Deneme" text degerini gonder
+
+#Şifre text boxa "Tt123456."girilir , rıza metni onaylama butonuna tıkanır
+*"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[3]/android.view.View[3]/android.widget.EditText" xpath'li elemente tikla
+*"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[3]/android.view.View[3]/android.widget.EditText" xpath'li elemente "Ttt123456." text degerini gonder
+*"checkSubscribeEmail" id'li elemente tikla
+
+#Üye ol butonuna tıklanır, Çıkan text' e tamam butonuna tıklanır
+*"btnSignUpSubmit" id'li elemente tikla
+*"android:id/button1" li element gorunur olana kadar bekle
+*"android:id/button1" id'li elemente tikla
+
+
+

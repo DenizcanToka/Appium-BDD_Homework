@@ -1,0 +1,18 @@
+[
+  {
+    "key" : "KategoriSeçimi",
+    "value" : "//android.widget.TextView[@content-desc=\"categoryText1\"]",
+    "type" : "xpath"
+  },
+  {
+    "key" : "CepTelefonuKategorisi",
+    "value" : "//android.view.ViewGroup[@content-desc=\"insideMenuItem1-1\"]/androidx.cardview.widget.CardView/android.widget.ImageView",
+    "type" : "xpath"
+  },
+  {
+    "key" : "TümÜrünlerButton",
+    "value" : "//android.widget.TextView[@content-desc=\"h2LevelChildCategoryText1\"]",
+    "type" : "xpath"
+  }
+
+]

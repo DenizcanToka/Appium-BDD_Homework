@@ -1,0 +1,31 @@
+This is a concept file with following syntax for each concept.
+
+
+#Anasayfa açılır,AnasayfaLogo nun görünür olduğu doğrulanır
+* "com.pozitron.hepsiburada:id/image_message_of_day" li element gorunur olana kadar bekle
+* "com.pozitron.hepsiburada:id/image_message_of_day" li elementin oldugu kontrol edilir
+
+#Hesap mesüne tıklanır, giriş yap'a  tıklanır
+* "com.pozitron.hepsiburada:id/account_menu_button" id'li elemente tikla
+* "//android.view.ViewGroup[@content-desc=\"account_menu_button_1\"]/android.view.ViewGroup/android.widget.Button" xpath'li elemente tikla
+
+#Kullanıcı adı girilir , giriş yap butonuna tıklanır
+*"txtUserName" id'li elemente tikla
+*"txtUserName" id'li elemente "testdeneme021@gmail.com" text degerini gonder
+*"btnLogin" id'li elemente tikla
+
+
+
+#Şifre girilir , giriş yap butonuna tıklanır
+*"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[4]/android.view.View/android.widget.EditText" xpath'li elemente tikla
+*"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[4]/android.view.View/android.widget.EditText" xpath'li elemente "Tt123456." text degerini gonder
+*"btnEmailSelect" id'li elemente tikla
+
+
+#Çıkan "HoşgeldinText" e tamam butonuna tıklanarak başarılı giriş kontol edilir ,Hesabım sayfası kapatılarak anasayafa geri dönülür
+*"android:id/button1" li element gorunur olana kadar bekle
+*"android:id/button1" li elementin oldugu kontrol edilir
+*"android:id/button1" id'li elemente tikla
+*"com.pozitron.hepsiburada:id/ivToolbarBack" id'li elemente tikla
+
+
