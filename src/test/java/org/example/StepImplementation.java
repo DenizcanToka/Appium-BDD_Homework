@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -112,17 +113,24 @@ public class StepImplementation extends BaseTest {
         assertEquals(stringList.get(0),stringList.get(1));
         logger.info(stringList.get(0)+stringList.get(1)+"birbirine esittir");
     }
+
     @Step("<second> saniye kadar bekle")
-    public void waitForsecond(int second) throws InterruptedException {
-        Thread.sleep(1000*second);
+    public void waitForSecond (int second) {
+        try {
+            TimeUnit.SECONDS.sleep(second);
+        } catch (InterruptedException e) {
+
+            logger.warn("Delay de hata : " + e.getMessage());
+            Thread.currentThread().interrupt();
+        }
     }
     @Step("<element> id'li element varsa tikla")
-    public void clickAcceptbutton(String element) throws InterruptedException {
+    public void clickAcceptButton(String element) {
         if (appiumDriver.findElement(By.id(element)).isDisplayed()){
             appiumDriver.findElement(By.id(element)).click();
-            waitForsecond(3);
+            waitForSecond(3);
         }else {
-            System.out.println("Pop-up gelmedi");
+            logger.info("Pop-up gelmedi");
         }
     }
 }
